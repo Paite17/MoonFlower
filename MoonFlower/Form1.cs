@@ -22,7 +22,7 @@ namespace MoonFlower
         private void Form1_Load(object sender, EventArgs e)
         {
             // on load make a random number between 0 and 19
-            int randRange = yellowRandom.Next(0, 20);
+            int randRange = yellowRandom.Next(1, 20);
             yellowTextDecide(randRange);
         }
         private void yellowTextDecide(int number)
@@ -30,40 +30,40 @@ namespace MoonFlower
             // hard-coding the yellow texts because i'm lazy - fix later
             switch (number)
             {
-                case 0:
+                case 1:
                     yellowText.Text = "A work in progress!";
                     break;
-                case 1:
+                case 2:
                     yellowText.Text = "Cooler than sunflower!";
                     break;
-                case 2:
+                case 3:
                     yellowText.Text = "A Lewis-approved product!";
                     break;
-                case 3:
+                case 4:
                     yellowText.Text = "Subscribe to Paite";
                     break;
-                case 4:
+                case 5:
                     yellowText.Text = "var pooBackgroundFarts:Int";
                     break;
-                case 5:
+                case 6:
                     yellowText.Text = "Oh god I have to make 20 of these";
                     break;
-                case 6:
+                case 7:
                     yellowText.Text = "Funky!";
                     break;
-                case 7:
+                case 8:
                     yellowText.Text = "Made in C#";
                     break;
-                case 8:
+                case 9:
                     yellowText.Text = "Imagine using Java";
                     break;
-                case 9:
+                case 10:
                     yellowText.Text = "C--";
                     break;
-                case 10:
+                case 11:
                     yellowText.Text = "IT hates it!";
                     break;
-                case 11:
+                case 12:
                     yellowText.Text = "Shoutouts to Max!";
                     break;
                 case 13:
@@ -87,6 +87,9 @@ namespace MoonFlower
                 case 19:
                     yellowText.Text = "Made by Me!";
                     break;
+                case 20:
+                    yellowText.Text = "Open source forever!";
+                    break;
             }
         }
 
@@ -94,6 +97,12 @@ namespace MoonFlower
         {
             // change to the funny form
             new Form2().Show();
+            this.Hide();
+        }
+
+        private void imageButton_Click(object sender, EventArgs e)
+        {
+            new Form3().Show();
             this.Hide();
         }
     }

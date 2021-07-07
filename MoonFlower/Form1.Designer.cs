@@ -36,6 +36,7 @@ namespace MoonFlower
             this.credditLabel = new System.Windows.Forms.Label();
             this.breakPCButton = new System.Windows.Forms.Button();
             this.choiceLabel = new System.Windows.Forms.Label();
+            this.imageButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titleLabel
@@ -67,7 +68,7 @@ namespace MoonFlower
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Size = new System.Drawing.Size(56, 20);
             this.versionLabel.TabIndex = 2;
-            this.versionLabel.Text = "V. 1.0";
+            this.versionLabel.Text = "V. 1.1";
             // 
             // credditLabel
             // 
@@ -100,11 +101,23 @@ namespace MoonFlower
             this.choiceLabel.TabIndex = 6;
             this.choiceLabel.Text = "Choose something to do";
             // 
+            // imageButton
+            // 
+            this.imageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imageButton.Location = new System.Drawing.Point(381, 329);
+            this.imageButton.Name = "imageButton";
+            this.imageButton.Size = new System.Drawing.Size(173, 37);
+            this.imageButton.TabIndex = 7;
+            this.imageButton.Text = "Display a random image";
+            this.imageButton.UseVisualStyleBackColor = true;
+            this.imageButton.Click += new System.EventHandler(this.imageButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 776);
+            this.Controls.Add(this.imageButton);
             this.Controls.Add(this.choiceLabel);
             this.Controls.Add(this.breakPCButton);
             this.Controls.Add(this.credditLabel);
@@ -128,6 +141,7 @@ namespace MoonFlower
         private System.Windows.Forms.Label credditLabel;
         private System.Windows.Forms.Button breakPCButton;
         private System.Windows.Forms.Label choiceLabel;
+        private System.Windows.Forms.Button imageButton;
     }
 }
 
