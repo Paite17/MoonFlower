@@ -23,8 +23,7 @@ namespace MoonFlower
 
         private void stopButton_Click(object sender, EventArgs e)
         {
-            Form Form1 = new Form();
-            Form1.Show();
+            new Form1().Show();
             this.Hide();
         }
 

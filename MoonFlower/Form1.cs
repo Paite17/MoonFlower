@@ -93,8 +93,7 @@ namespace MoonFlower
         private void breakPCButton_Click(object sender, EventArgs e)
         {
             // change to the funny form
-            Form Form2 = new Form();
-            Form2.Show();
+            new Form2().Show();
             this.Hide();
         }
     }
